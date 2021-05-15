@@ -37,7 +37,7 @@ class LobbyViewController: UIViewController {
     //ロビー画面が見える様になるときに呼ばれる
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        techMonManager.stopBGM(fileName:"lobby")
+        techMonManager.stopBGM()
     }
     
     //ロビー画面が見えなくなるときに呼ばれる
@@ -69,15 +69,15 @@ class LobbyViewController: UIViewController {
             staminaLabel.text = "\(stamina) / 100"
         }
     }
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
